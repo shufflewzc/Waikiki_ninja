@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@koa/cors': ^3.1.0
@@ -428,22 +428,50 @@ packages:
     engines: {node: '>=4.0'}
     dev: false
 
-  /debug/2.6.9:
+  /debug/2.6.9_supports-color@5.5.0:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: 2.0.0
+      supports-color: 5.5.0
     dev: false
 
   /debug/3.1.0:
     resolution: {integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: 2.0.0
     dev: false
 
   /debug/3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: 2.1.3
+    dev: false
+
+  /debug/3.2.7_supports-color@5.5.0:
+    resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.3
+      supports-color: 5.5.0
     dev: false
 
   /debug/4.3.2:
@@ -602,6 +630,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -673,6 +702,8 @@ packages:
     dependencies:
       '@sindresorhus/is': 0.14.0
       '@szmarczak/http-timer': 1.1.2
+      '@types/keyv': 3.1.2
+      '@types/responselike': 1.0.0
       cacheable-request: 6.1.0
       decompress-response: 3.3.0
       duplexer3: 0.1.4
@@ -955,6 +986,8 @@ packages:
     resolution: {integrity: sha512-1RXEvN+DlMgdEsVWW2MH8vZly9KGWdqryo6jmTWuVZWSmZEH/Hfp3lZ1SCtpD9Lmvkke5i6FzQrFucYUnmwFEQ==}
     dependencies:
       log4js: 3.0.6
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /koa-send/5.0.1:
@@ -1005,6 +1038,8 @@ packages:
       statuses: 1.5.0
       type-is: 1.6.18
       vary: 1.1.2
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /latest-version/5.1.0:
@@ -1031,6 +1066,8 @@ packages:
       debug: 3.2.7
       rfdc: 1.3.0
       streamroller: 0.7.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /lowercase-keys/1.0.1:
@@ -1123,14 +1160,14 @@ packages:
     requiresBuild: true
     dependencies:
       chokidar: 3.5.2
-      debug: 3.2.7
+      debug: 3.2.7_supports-color@5.5.0
       ignore-by-default: 1.0.1
       minimatch: 3.0.4
       pstree.remy: 1.1.8
       semver: 5.7.1
       supports-color: 5.5.0
       touch: 3.1.0
-      undefsafe: 2.0.3
+      undefsafe: 2.0.3_supports-color@5.5.0
       update-notifier: 4.1.3
     dev: false
 
@@ -1454,6 +1491,8 @@ packages:
       debug: 3.2.7
       mkdirp: 0.5.5
       readable-stream: 2.3.7
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /string-width/3.1.0:
@@ -1566,10 +1605,12 @@ packages:
       is-typedarray: 1.0.0
     dev: false
 
-  /undefsafe/2.0.3:
+  /undefsafe/2.0.3_supports-color@5.5.0:
     resolution: {integrity: sha512-nrXZwwXrD/T/JXeygJqdCO6NZZ1L66HrxM/Z7mIq2oPanoN0F1nLx3lwJMu6AwJY69hdixaFQOuoYsMjE5/C2A==}
     dependencies:
-      debug: 2.6.9
+      debug: 2.6.9_supports-color@5.5.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /unique-string/2.0.0:
